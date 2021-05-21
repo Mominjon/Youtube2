@@ -1,0 +1,439 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul ol li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.Menu-icon {
+    background-color: #fff;
+    border: none!important;
+}
+
+.body {
+    height: 200vh;
+}
+
+.qulf {
+    margin-left: 0px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.youtube {
+    margin-top: 8px;
+    opacity: 0.7;
+}
+
+.pusk-qism {
+    margin-left: 220px;
+}
+
+.offcanvas-start {
+    width: 250px;
+}
+
+.pusk-qism input {
+    margin-top: 5px;
+    width: 550px;
+    padding: 2px 5px;
+}
+
+#offcanvasExampleLabel {
+    position: absolute;
+    margin-left: 50px;
+}
+
+.text-reset {
+    border: none;
+    background-color: #fff;
+}
+
+.you-tube-logo {
+    user-select: none;
+}
+
+.button-1 {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 1px solid black;
+    padding: 3px 20px;
+    background-color: rgb(238, 232, 232);
+    margin-left: -6px;
+    opacity: 0.6;
+}
+
+.button-1:hover {
+    opacity: 1;
+}
+
+.nav-mikrafon {
+    border: none;
+    height: 35px;
+    margin-top: -7px;
+    margin-left: 7px;
+    background-color: #fff;
+}
+
+.nav-mikrafon img {
+    width: 25px;
+    height: 25px;
+}
+
+.chekka-menu {
+    margin-left: 250px;
+}
+
+.camera {
+    border: none;
+    background-color: #fff;
+}
+
+.camera img {
+    width: 20px;
+    height: 20px;
+}
+
+.nuqtali-menu {
+    margin-left: 20px;
+    border: none;
+    background-color: #fff;
+}
+
+.nuqtali-menu img {
+    width: 30px;
+    height: 30px;
+}
+
+.ball-link {
+    margin-left: 20px;
+    border: none;
+    background-color: #fff;
+}
+
+.ball-link img {
+    width: 25px;
+    height: 25px;
+}
+
+.accaunt {
+    margin-top: 5px;
+    width: 32px;
+    margin-left: 25px;
+    border: none;
+    height: 32px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(8, 23, 150);
+}
+
+.accaunt h4 {
+    text-align: center;
+    margin-top: 3px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.asosiy-menu-div {
+    border-top: 1px solid rgb(000, 000, 000, 0.2);
+    margin-top: -10px;
+    padding-top: 18px;
+}
+
+.asosiy-menu {
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.asosiy-menu-img {
+    width: 25px;
+    opacity: 0.8;
+    margin-top: 5px;
+    margin-left: 20px;
+    height: 25px;
+}
+
+.galcha {
+    margin-top: -5px!important;
+    opacity: 0.7;
+}
+
+.qoshimcha {
+    margin-top: 5px;
+    margin-left: 13px;
+    width: 35px;
+}
+
+.bg-color {
+    opacity: 0.9;
+    width: 250px;
+    margin-left: -20px;
+    height: 45px;
+    padding-top: 5px;
+}
+
+.bg-color:hover {
+    background-color: rgb(226, 223, 223);
+}
+
+.kichray {
+    width: 25px;
+}
+
+.podpiska {
+    margin-top: -10px!important;
+    font-weight: 600;
+    font-size: 17px;
+    opacity: 0.7;
+    margin-left: 10px;
+}
+
+.img-profil {
+    border-radius: 50%;
+    opacity: 1!important;
+}
+
+.text-profil {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.asosiy-menu-div p {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.teparo {
+    margin-top: -5px!important;
+}
+
+.div-profil {
+    padding: 0px!important;
+    height: 35px;
+}
+
+.durogov {
+    margin-top: -10px!important;
+    font-weight: 600;
+    font-size: 15px;
+    opacity: 0.7;
+    margin-left: 10px;
+}
+
+.opasity {
+    opacity: 0.5;
+}
+
+
+/* nav qisim tugatildi */
+
+
+/* body qismi boshlanyabdi */
+
+.body {
+    background-color: rgb(247, 247, 246);
+}
+
+.video-chiqish {
+    display: block;
+    width: 910px;
+    height: 525px;
+    padding: 20px;
+}
+
+.malumot-qism {
+    height: 250px;
+    width: 910px;
+    border-bottom: 1px solid rgb(165, 162, 162);
+}
+
+.videolar-royhati {
+    width: 450px;
+    height: 100vh;
+    margin-top: -750px;
+    margin-left: 920px;
+}
+
+.box {
+    margin-left: -20px;
+}
+
+.video-content {
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.prosmotr {
+    font-size: 15px;
+    opacity: 0.7;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.data {
+    font-size: 15px;
+    opacity: 0.7;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.button-like {
+    margin-left: 55px;
+    border: none;
+    background-color: rgb(247, 247, 246);
+    width: 90px;
+    height: 60px;
+    margin-top: -15px;
+    opacity: 0.8;
+    border-bottom: 5px solid rgb(131, 129, 129);
+}
+
+.button-disklike {
+    margin-top: -15px;
+    border: none;
+    background-color: rgb(247, 247, 246);
+    opacity: 0.8;
+    border-bottom: 5px solid rgb(131, 129, 129);
+    width: 90px;
+    height: 60px;
+}
+
+.jonatish-img {
+    margin-top: -0px;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    opacity: 0.8;
+}
+
+.jonatish-text {
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.saxranit-img {
+    margin-top: 3px;
+    margin-left: 25px;
+    opacity: 0.5;
+}
+
+.saxranit-text {
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.more {
+    margin-left: 15px;
+    width: 40px;
+    height: 15px;
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+.yutube-list {
+    margin-top: 33px;
+}
+
+.yutube-text1 {
+    margin-top: 45px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 5px;
+    align-items: center;
+}
+
+.yutube-text2 {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.yutube-list2 {
+    margin-top: 10px;
+}
+
+.najottalim {
+    color: #fff;
+    background-color: rgb(21, 87, 185);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+}
+
+.button-podpiska {
+    color: #fff;
+    margin-left: 550px;
+    height: 35px;
+    font-weight: 500;
+    padding: 0px 15px;
+    font-size: 17px;
+    background-color: rgb(201, 3, 3);
+    border-radius: 0!important;
+}
+
+.button-podpiska:hover {
+    color: #fff;
+}
+
+.obuna-content {
+    margin-top: -2px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(165, 162, 162);
+}
+
+.obunchi {
+    margin-left: 10px;
+}
+
+.kanal-nami {
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+.obunach-soni {
+    margin-top: -20px;
+    font-size: 12px;
+    font-weight: bolder;
+    opacity: 0.6;
+}
+
+.paragraf {
+    margin-top: 20px;
+    margin-left: 60px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.top {
+    margin-top: -20px!important;
+}
+
+.box :nth-child(1) {
+    width: 900px;
+    height: 500px;
+}
