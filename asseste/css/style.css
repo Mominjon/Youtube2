@@ -95,12 +95,13 @@ body {
 }
 
 .chekka-menu {
-    margin-left: 250px;
+    margin-left: 350px;
 }
 
 .camera {
     border: none;
     background-color: #fff;
+    opacity: 0.8;
 }
 
 .camera img {
@@ -109,9 +110,10 @@ body {
 }
 
 .nuqtali-menu {
-    margin-left: 20px;
+    margin-left: 30px;
     border: none;
     background-color: #fff;
+    opacity: 0.8;
 }
 
 .nuqtali-menu img {
@@ -120,9 +122,10 @@ body {
 }
 
 .ball-link {
-    margin-left: 20px;
+    margin-left: 30px;
     border: none;
     background-color: #fff;
+    opacity: 0.8;
 }
 
 .ball-link img {
@@ -133,10 +136,11 @@ body {
 .accaunt {
     margin-top: 5px;
     width: 32px;
-    margin-left: 25px;
+    margin-left: 30px;
     border: none;
     height: 32px;
     border-radius: 50%;
+    opacity: 0.8;
     color: #fff;
     background-color: rgb(8, 23, 150);
 }
@@ -270,6 +274,19 @@ body {
     margin-left: 920px;
 }
 
+.qoshimcha-video :first-child {
+    width: 910px!important;
+    height: 525px!important;
+    margin-top: 20px!important;
+}
+
+.videolar-royhati :first-child {
+    width: 450px;
+    height: 250px;
+    margin-bottom: 30px;
+    margin-top: -20px;
+}
+
 .box {
     margin-left: -20px;
 }
@@ -352,18 +369,6 @@ body {
     margin-top: 10px;
 }
 
-.yutube-list {
-    margin-top: 33px;
-}
-
-.yutube-text1 {
-    margin-top: 45px;
-    font-weight: bold;
-    font-size: 20px;
-    margin-left: 5px;
-    align-items: center;
-}
-
 .yutube-text2 {
     margin-top: 15px;
     font-weight: bold;
@@ -374,6 +379,8 @@ body {
 
 .yutube-list2 {
     margin-top: 10px;
+    height: 150px!important;
+    width: 250px!important;
 }
 
 .najottalim {
@@ -430,10 +437,36 @@ body {
 }
 
 .top {
-    margin-top: -20px!important;
+    margin-top: 1px!important;
 }
 
 .box :nth-child(1) {
     width: 900px;
     height: 500px;
+    position: absolute;
+}
+
+.box :nth-child(2) {
+    padding-top: 200px!important;
+}
+
+.hatolik {
+    margin-top: -100px;
+}
+
+.yutube-list {
+    height: 160px!important;
+    width: 250px!important;
+    height: 250px;
+    margin-bottom: 0px!important;
+    margin-top: 0px;
+}
+
+.yutube-text1 {
+    margin-top: 45px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 5px;
+    align-items: center;
+    margin-bottom: 0px!important;
 }
