@@ -48,7 +48,7 @@ buttonpuskeElement.addEventListener(`click`, video6 => {
         Nevvideo.innerHTML = inputElement.value
         manzil.prepend(Nevvideo)
         data.push(inputElement.value)
-        Nevvideo.style.zIndex = `1` + 1
+        Nevvideo.style.zIndex = `1`
     } else {
         alert(`eror`)
     }
@@ -68,7 +68,7 @@ buttonpuskeElement.addEventListener(`click`, ohiri => {
         if (sinov.indexOf(inputElement.value) == -1) {
             const Newvideo3 = document.createElement(`box2`)
             Newvideo3.innerHTML = inputElement.value
-            manzil2.appendChild(Newvideo3)
+            manzil2.prepend(Newvideo3)
             sinov.push(inputElement.value)
         } else {
 
