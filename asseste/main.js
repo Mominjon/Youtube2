@@ -74,17 +74,3 @@ buttonpuskeElement.addEventListener(`click`, ohiri => {
 
         }
     })
-    // function kattaMenu() {
-    //     removevideo.remove()
-    //     const Nevvideo = document.createElement(`box`)
-    //     Nevvideo.innerHTML = inputElement.value
-    //     inputElement.value = null
-    //     manzil.prepend(Nevvideo)
-    // }
-
-// function kichikmenu() {
-//     const Newvideo2 = document.createElement(`box1`)
-//     Newvideo2.innerHTML = inputElement.value
-//     inputElement.value = null
-//     qoshimcha.prepend(Newvideo2)
-// }
