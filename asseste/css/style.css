@@ -247,7 +247,8 @@ body {
 
 .video-chiqish {
     display: block;
-    width: 910px;
+    margin-left: -30px;
+    width: 810px;
     height: 525px;
     padding: 20px;
 }
@@ -255,21 +256,18 @@ body {
 .malumot-qism {
     height: 250px;
     width: 910px;
+    margin-left: -30px;
     border-bottom: 1px solid rgb(165, 162, 162);
 }
 
 .videolar-royhati {
     width: 450px;
     height: 100vh;
-    margin-top: -750px;
-    margin-left: 920px;
+    margin-top: -770px;
+    margin-left: 900px;
 }
 
-.qoshimcha-video :first-child {
-    width: 710px!important;
-    height: 525px!important;
-    margin-top: 20px!important;
-}
+
 
 .videolar-royhati :first-child {
     width: 450px;
@@ -295,7 +293,9 @@ body {
     margin-left: 10px;
     margin-top: 3px;
 }
-
+.yutube-text1, .yutube-text2 {
+    display: none;
+}
 .data {
     font-size: 15px;
     opacity: 0.7;
