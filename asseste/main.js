@@ -34,8 +34,21 @@ let button_search = document.querySelector(`.button-1`)
 let input = document.querySelector(`.input`)
 let manzil = document.querySelector(`.manzil`)
 button_search.addEventListener(`click`, search)
+let load = document.querySelector(`.spinner-border`)
+let load_text = document.querySelector(`.load-text`)
 function search () {
-    remove.remove();
+    let loader = setTimeout(ochil, 10000)
+    manzil.style.opacity = `0`
+    function ochil(){
+        load.style.display = `none`
+        manzil.style.opacity = `1`
+        load_text.style.display = `none`
+    }
+    load.style.display = `block`
+    load_text.style.display = `block`
+    yukla()
+    function yukla(){
+        remove.remove();
     remove2.remove();
     remove3.remove();
     fetch(`https://bing-video-search1.p.rapidapi.com/videos/search?q=${input.value}`, {
@@ -70,6 +83,7 @@ for(var i = 0 ; i < data.value.length; i++){
     manzil.prepend(div)
 }
 })
+    }
 }
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new SpeechRecognition;
@@ -83,4 +97,7 @@ recognition.onresult = (evt) => {
     input.value = natija
     button_search.click();
     console.log(natija)
+    document.addEventListener('DOMContentLoaded', () => {
+        
+    })
 }
