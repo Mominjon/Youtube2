@@ -7,7 +7,6 @@ let x = 0
 function bajar1() {
     if (x == 0) {
         dislikeElement.style.borderBottom = `5px solid blue`
-
         x = 1
     } else if (x == 1) {
         dislikeElement.style.borderBottom = `5px solid rgb(131, 129, 129)`
@@ -28,49 +27,60 @@ function bajar() {
 }
 
 // video
-const inputElement = document.querySelector(`.input`)
-const buttonpuskeElement = document.querySelector(`.button-1`)
-const removevideo = document.querySelector(`.remove-video`)
-const manzil = document.querySelector(`.box`)
-const hato = document.querySelector(`.hatolik`)
-const buttonKatta = document.querySelector(`.button-5`)
-const qoshimcha = document.querySelector(`.videolar-royhati`)
-const manzil2 = document.querySelector(`.qoshimcha-video`)
-const data = []
-const bilm = []
-const sinov = []
+let remove = document.querySelector(`.video-chiqish`)
+let remove2 = document.querySelector(`.malumot-qism`)
+let remove3  = document.querySelector(`.videolar-royhati`)
+let button_search = document.querySelector(`.button-1`)
+let input = document.querySelector(`.input`)
+let manzil = document.querySelector(`.manzil`)
+button_search.addEventListener(`click`, search)
+function search () {
+    remove.remove();
+    remove2.remove();
+    remove3.remove();
+    fetch(`https://bing-video-search1.p.rapidapi.com/videos/search?q=${input.value}`, {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-key": "7cc114bb66mshed1b12c7c757e11p1ce9d5jsn862685503287",
+		"x-rapidapi-host": "bing-video-search1.p.rapidapi.com"
+	}
+}).then(response => response.json())
+.then(data => {
+malumot = data;
 
-buttonpuskeElement.addEventListener(`click`, video6 => {
-    removevideo.remove()
-    hato.style.margin = `5px`
-    if (data.indexOf(inputElement.value) == -1) {
-        let Nevvideo = document.createElement(`box`)
-        Nevvideo.innerHTML = inputElement.value
-        manzil.prepend(Nevvideo)
-        data.push(inputElement.value)
-        Nevvideo.style.zIndex = `1`
-    } else {
-        alert(`eror`)
+let hato = []
+for(var i = 0 ; i < data.value.length; i++){
+    console.log(data.value[i])
+    let div = document.createElement(`div`)
+    let text = document.createElement(`p`)
+    let newli = document.createElement(`li`)
+    text.innerHTML = `${data.value[i].description}`
+    newli.innerHTML = `${data.value[i].embedHtml}`
+    text.classList.add(`text-video`)
+    newli.classList.add(`video-video`)
+    if(data.value[i].embedHtml == undefined ||data.value[i].description == undefined){
+        hato.push(data.value[i].embedHtml)
+        hato.push(data.value[i].description)
     }
-})
-buttonpuskeElement.addEventListener(`click`, qoshimcha23 => {
-
-    if (bilm.indexOf(inputElement.value) == -1) {
-        const Newvideo2 = document.createElement(`box1`)
-        Newvideo2.innerHTML = inputElement.value
-        qoshimcha.prepend(Newvideo2)
-        bilm.push(inputElement.value)
-    } else {
-
+    else{
+        div.appendChild(newli)
+        div.appendChild(text)
     }
+    div.style.display = `flex`
+    manzil.prepend(div)
+}
 })
-buttonpuskeElement.addEventListener(`click`, ohiri => {
-        if (sinov.indexOf(inputElement.value) == -1) {
-            const Newvideo3 = document.createElement(`box2`)
-            Newvideo3.innerHTML = inputElement.value
-            manzil2.prepend(Newvideo3)
-            sinov.push(inputElement.value)
-        } else {
-
-        }
-    })
+}
+const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+const recognition = new SpeechRecognition;
+const recoding11 = document.querySelector(`.nav-mikrafon`)
+recognition.lang = "uz-UZ";
+recoding11.addEventListener(`click`, () => {
+    recognition.start();
+})
+recognition.onresult = (evt) => {
+    let natija = evt.results[0][0].transcript;
+    input.value = natija
+    button_search.click();
+    console.log(natija)
+}

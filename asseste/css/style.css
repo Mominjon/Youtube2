@@ -22,7 +22,8 @@ body {
 }
 
 .body {
-    height: 200vh;
+    margin: 0;
+    padding: 0;
 }
 
 .qulf {
@@ -40,7 +41,7 @@ body {
 }
 
 .pusk-qism {
-    margin-left: 220px;
+    margin-left: 120px;
 }
 
 .offcanvas-start {
@@ -49,7 +50,7 @@ body {
 
 .pusk-qism input {
     margin-top: 5px;
-    width: 550px;
+    width: 450px;
     padding: 2px 5px;
 }
 
@@ -95,7 +96,7 @@ body {
 }
 
 .chekka-menu {
-    margin-left: 210px;
+    margin-left: 170px;
 }
 
 .camera {
@@ -241,18 +242,8 @@ body {
 }
 
 .opasity {
-    opacity: 0.5;
-}
+    opacity: 0.5;}
 
-
-/* nav qisim tugatildi */
-
-
-/* body qismi boshlanyabdi */
-
-.body {
-    background-color: rgb(247, 247, 246);
-}
 
 .video-chiqish {
     display: block;
@@ -275,7 +266,7 @@ body {
 }
 
 .qoshimcha-video :first-child {
-    width: 910px!important;
+    width: 710px!important;
     height: 525px!important;
     margin-top: 20px!important;
 }
@@ -469,4 +460,26 @@ body {
     margin-left: 5px;
     align-items: center;
     margin-bottom: 0px!important;
+}
+.manzil {
+    display: block;
+}
+li {
+    list-style: none;
+}
+.manzil li {
+    margin: 10px;
+}
+.manzil li iframe {
+    width: 350px;
+    height: 200px;
+}
+.video-video {
+    margin: 10px;
+}
+.text-video {
+    padding: 15px;
+    font-weight: bolder;
+    display: flex;
+    align-items:justify;
 }
