@@ -19,4 +19,8 @@
   border: black;
   color: blanchedalmond;
 }
+
+.dark .load-text {
+  color: #fff !important;
+}
 /*# sourceMappingURL=main.css.map */
