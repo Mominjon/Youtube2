@@ -63,7 +63,7 @@ malumot = data;
 
 let hato = []
 for(var i = 0 ; i < data.value.length; i++){
-    console.log(data.value[i])
+    console.log(data.value[i].embedHtml)
     let div = document.createElement(`div`)
     let text = document.createElement(`p`)
     let newli = document.createElement(`li`)
@@ -101,3 +101,28 @@ recognition.onresult = (evt) => {
         
     })
 }
+
+let myinput = document.querySelector(`.myinput`)
+let html =  document.querySelector(`html`)
+let setjavobi = window.localStorage.getItem(`input2`)
+console.log(setjavobi)
+
+if(setjavobi == `true`){
+    console.log(setjavobi + ` bu javob`)
+    myinput.checked = true;
+}else if(setjavobi == `false`) {
+    console.log(setjavobi + ` bu javob`)
+    myinput.checked = false
+}
+
+function chask (){
+     if(myinput.checked  == true){
+        html.classList.add(`dark`)
+        window.localStorage.setItem(`input2`, `true`)
+     }else if(myinput.checked  == false){
+        window.localStorage.setItem(`input2`,  `false`)
+         html.classList.remove(`dark`)
+     }
+}
+chask()
+let saee = setInterval(chask, 1000)

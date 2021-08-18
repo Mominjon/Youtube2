@@ -1,0 +1,22 @@
+.dark body {
+  background-color: #272626;
+  color: blanchedalmond;
+}
+
+.dark .offcanvas {
+  background-color: black;
+  color: #fff;
+}
+
+.dark .asosiy-menu-img {
+  background-color: white;
+  padding: 5px;
+  border-radius: 1px;
+}
+
+.dark .qulf {
+  background-color: #464343;
+  border: black;
+  color: blanchedalmond;
+}
+/*# sourceMappingURL=main.css.map */

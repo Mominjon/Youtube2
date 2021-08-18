@@ -96,50 +96,53 @@ body {
 }
 
 .chekka-menu {
-    margin-left: 170px;
+    margin-left: 150px;
 }
 
 .camera {
-    border: none;
     background-color: #fff;
     opacity: 0.8;
+    border-radius: 10px;
 }
 
 .camera img {
-    width: 20px;
-    height: 20px;
-}
-
-.nuqtali-menu {
-    margin-left: 30px;
-    border: none;
-    background-color: #fff;
-    opacity: 0.8;
-}
-
-.nuqtali-menu img {
+    padding: 5px;
     width: 30px;
     height: 30px;
 }
 
-.ball-link {
-    margin-left: 30px;
+.nuqtali-menu {
+    margin-left: 15px;
     border: none;
+    background-color: #fff;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.nuqtali-menu img {
+    width: 30px;
+    padding: 5px;
+    height: 30px;
+}
+
+.ball-link {
+    margin-left: 15px;
+    border-radius: 10px;
     background-color: #fff;
     opacity: 0.8;
 }
 
 .ball-link img {
-    width: 25px;
-    height: 25px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
 }
 
 .accaunt {
-    margin-top: 5px;
-    width: 32px;
-    margin-left: 30px;
-    border: none;
-    height: 32px;
+    margin-left: 15px;
+    position:absolute;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     opacity: 0.8;
     color: #fff;
@@ -147,6 +150,7 @@ body {
 }
 
 .accaunt h4 {
+    padding: 5px;
     text-align: center;
     margin-top: 3px;
     font-size: 20px;
@@ -485,20 +489,61 @@ li {
 
 .spinner-border {
     position: fixed;
-    top: 250px;
+
     bottom: 0;
-    left: 600px;
+
     right: 0;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     display: none;
 }
 .load-text {
     position: fixed;
-    top: 370px;
     bottom: 0;
-    left: 615px;
     display: none;
     right: 0;
     color: black;
+}
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+    margin-left: 70px;
+    margin-top: -18px;
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 60px;
+	height: 30px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #bada55;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 50px;
 }
